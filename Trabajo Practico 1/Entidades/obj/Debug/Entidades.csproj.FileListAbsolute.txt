@@ -1,0 +1,6 @@
+D:\Documentos de Texto\1er cuatri 2020\Laboratorio y Programacion II\Trabajos Practicos\Trabajo Practico 1\Entidades\bin\Debug\Entidades.dll
+D:\Documentos de Texto\1er cuatri 2020\Laboratorio y Programacion II\Trabajos Practicos\Trabajo Practico 1\Entidades\bin\Debug\Entidades.pdb
+D:\Documentos de Texto\1er cuatri 2020\Laboratorio y Programacion II\Trabajos Practicos\Trabajo Practico 1\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+D:\Documentos de Texto\1er cuatri 2020\Laboratorio y Programacion II\Trabajos Practicos\Trabajo Practico 1\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+D:\Documentos de Texto\1er cuatri 2020\Laboratorio y Programacion II\Trabajos Practicos\Trabajo Practico 1\Entidades\obj\Debug\Entidades.dll
+D:\Documentos de Texto\1er cuatri 2020\Laboratorio y Programacion II\Trabajos Practicos\Trabajo Practico 1\Entidades\obj\Debug\Entidades.pdb
