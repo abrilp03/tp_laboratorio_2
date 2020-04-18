@@ -26,8 +26,6 @@ namespace MiCalculadora
             this.MinimizeBox = false;
 
             this.cmbOperador.Items.AddRange(new string[] {"+", "-", "*", "/"});
-            //this.cmbOperador.SelectedItem = "+";
-            //this.cmbOperador.DropDownStyle = ComboBoxStyle.DropDownList;
 
             this.Limpiar();
         }
@@ -39,14 +37,12 @@ namespace MiCalculadora
 
         private void btnConvertirABinario_Click(object sender, EventArgs e)
         {
-            string auxResultado = this.lblResultado.Text;
-            this.lblResultado.Text = Numero.DecimalBinario(auxResultado);                        
+            this.lblResultado.Text = Numero.DecimalBinario(lblResultado.Text);                        
         }
 
         private void btnConvertirADecimal_Click(object sender, EventArgs e)
         {
-            string auxResultado = this.lblResultado.Text;
-            this.lblResultado.Text = Numero.BinarioDecimal(auxResultado);
+            this.lblResultado.Text = Numero.BinarioDecimal(lblResultado.Text);
         }
 
         private void btnLimpiar_Click(object sender, EventArgs e)
@@ -74,11 +70,6 @@ namespace MiCalculadora
                     control.Text = "";
                 }
             }
-
-            //this.txtNumero1.Text = "";
-            //this.txtNumero2.Text = "";
-            //this.lblResultado.Text = "";
-            //this.cmbOperador.Text = "";           this.cmbOperador.SelectedIndex = 0;
         }
 
         private static double Operar(string numero1, string numero2, string operador)

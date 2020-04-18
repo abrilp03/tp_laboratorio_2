@@ -13,30 +13,30 @@ namespace Entidades
 		public Numero()
 		{
 			this._numero = 0;
-		}
-
-		public Numero(double numero) : this(numero.ToString())
-		{
-			
-		}
+		}		
 
 		public Numero(string strNumero)
 		{
 			this.SetNumero = strNumero;
 		}
 
+		public Numero(double numero) : this(numero.ToString())
+		{
+
+		}
+
 		public string SetNumero
 		{
-			set { _numero = ValidarNumero(value); }
+			set { this._numero = ValidarNumero(value); }
 		}
 
 		private double ValidarNumero(string strNumero)
 		{
 			double retorno;
 
-			if(double.TryParse(strNumero, out double resultado))
+			if(double.TryParse(strNumero, out double auxNumero))
 			{
-				retorno = resultado;
+				retorno = auxNumero;
 			}
 			else
 			{
@@ -57,14 +57,16 @@ namespace Entidades
 			{
 				auxBinario[i] = char.GetNumericValue(binario[i]);
 
-				if(auxBinario[i] != 0 && auxBinario[i] != 1)
+				if(auxBinario[i] != 1 && auxBinario[i] != 0)
 				{
 					esBinario = false;
+					break;
 				}
 			}
+
 			if(esBinario == false)
 			{
-				strBinario = "Valor inválido";
+				strBinario = "Valor Inválido";
 			}
 			else
 			{
@@ -81,13 +83,13 @@ namespace Entidades
 
 		public static string DecimalBinario(double numero)
 		{
-			string strNumero = " ";
-			int auxNumero = (int)numero;
+			string strNumero = "";
+			int intNumero = (int)numero;
 
-			while(auxNumero > 0)
+			while(intNumero > 0)
 			{
-				strNumero += (auxNumero % 2).ToString();
-				auxNumero /= 2;
+				strNumero = (intNumero % 2).ToString() + strNumero;
+				intNumero /= 2;
 			}
 
 			return strNumero;
@@ -152,7 +154,6 @@ namespace Entidades
 			resultado = n1._numero * n2._numero;
 
 			return resultado;
-
 		}
 	}
 }
